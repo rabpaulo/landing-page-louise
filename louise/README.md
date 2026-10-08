@@ -1,6 +1,6 @@
 # Louise Lingerie — conceito de experiência digital
 
-Projeto conceitual independente desenvolvido por Paulo Rabelo como demonstração técnica para a vaga de Desenvolvedor de Sistema Júnior. Não é um site oficial nem possui vínculo com a Louise Lingerie.
+Projeto conceitual desenvolvido por Paulo Rabelo como demonstração técnica independente de desenvolvimento web. Não é um site oficial nem possui vínculo com a Louise Lingerie.
 
 ## Referência de negócio
 

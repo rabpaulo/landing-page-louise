@@ -1,6 +1,6 @@
 # Louise Lingerie — experiência digital conceitual
 
-Projeto independente de landing page desenvolvido por Paulo Rabelo como demonstração técnica. **Não é um site oficial e não possui vínculo com a Louise Lingerie.**
+Projeto conceitual desenvolvido por Paulo Rabelo como demonstração técnica independente de desenvolvimento web. **Não é um site oficial e não possui vínculo com a Louise Lingerie.**
 
 O código da aplicação fica em [`louise/`](./louise/). O catálogo, os preços e as imagens são ilustrativos; a sacola funciona apenas no navegador e não envia pedidos nem pagamentos.
 
