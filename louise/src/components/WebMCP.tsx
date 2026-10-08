@@ -24,7 +24,7 @@ export function WebMCP() {
     const tools: Tool[] = [
       {
         name: 'list_louise_concept_products', title: 'Consultar a vitrine demonstrativa',
-        description: 'Lista itens e valores ilustrativos deste projeto conceitual. Não representa o catálogo oficial nem realiza compras.',
+        description: 'Lista itens demonstrativos e valores de referência por categoria deste conceito independente. Confirme preços atuais no catálogo oficial; a ferramenta não realiza compras.',
         inputSchema: { type: 'object', properties: {}, additionalProperties: false },
         annotations: { readOnlyHint: true, untrustedContentHint: false },
         execute: () => ({ demo: true, official: false, products: products.map(({ id, name, category, priceInCents }) => ({ id, name, category, priceInCents, sizes: ['P', 'M', 'G', 'GG'] })) }),

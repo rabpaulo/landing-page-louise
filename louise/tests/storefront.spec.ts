@@ -150,7 +150,7 @@ for (const colorScheme of ['light', 'dark'] as const) {
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBeTruthy()
       await page.locator('#duvidas').scrollIntoViewIfNeeded()
       await page.getByText('As peças e os preços desta vitrine são oficiais?', { exact: true }).click()
-      await expect(page.getByText(/fotos, variações, tamanhos e valores são ilustrativos/)).toBeVisible()
+      await expect(page.getByText(/valores são referências por categoria pesquisadas no catálogo público/)).toBeVisible()
       await page.locator('#colecao').scrollIntoViewIfNeeded()
       const images = page.locator('.product-image img')
       for (let index = 0; index < await images.count(); index += 1) {

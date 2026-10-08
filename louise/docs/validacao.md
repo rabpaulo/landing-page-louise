@@ -14,10 +14,10 @@ Verificação executada em 8 de outubro de 2026 na versão conceitual Louise Lin
 
 ## Limites da demonstração
 
-O catálogo, preços e imagens são ilustrativos. A sacola funciona no navegador, mas o checkout não envia pedidos nem pagamentos. O assistente é uma demonstração e não representa o atendimento oficial da marca. Não foram executados testes de pedido, pagamento, estoque, autenticação, chave Gemini nem serviços de produção.
+Imagens, combinações e tamanhos são demonstrativos; os valores são referências por categoria do catálogo de atacado consultado em 8 de outubro de 2026. A sacola funciona no navegador, mas o checkout não envia pedidos nem pagamentos. O assistente é uma demonstração e não representa o atendimento oficial da marca. Não foram executados testes de pedido, pagamento, estoque, autenticação, chave Gemini nem serviços de produção.
 
 Não foi feita uma nova medição Lighthouse nesta versão. Os relatórios antigos foram descartados porque mediam uma versão anterior e não descrevem este redesign.
 
 ## Publicação
 
-Esta verificação é local; não houve publicação nem validação do endereço público. O código agora está em `louise/`. Antes de uma próxima publicação, ajuste o **Root Directory** do projeto na Vercel para `louise` e então publique e confira o domínio.
+O projeto `landing-page-louise` usa `louise` como **Root Directory** na Vercel. Pushes para `main` iniciam deploy de produção em [landing-page-louise.vercel.app](https://landing-page-louise.vercel.app/). Após cada push, confirme no painel da Vercel que o deploy do commit ficou pronto e confira o domínio público.

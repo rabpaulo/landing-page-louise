@@ -120,7 +120,7 @@ function getInstantCatalogAnswer(question: string): string | null {
   if (!asksPrice) return null;
 
   const product = products.find((item) => normalizedQuestion.includes(normalizeText(item.name)));
-  return product ? "Nesta demonstração, " + product.name + " aparece com o valor ilustrativo de " + formatPrice(product.priceInCents) + ". Consulte o site oficial para ver preços e disponibilidade atuais." : null;
+  return product ? "Nesta demonstração, " + product.name + " aparece com o valor de referência por categoria de " + formatPrice(product.priceInCents) + ". Ele pode não corresponder ao modelo exibido nem ao preço atual; confira o catálogo oficial." : null;
 }
 
 function normalizeText(value: string): string {
@@ -176,13 +176,13 @@ function isRateLimited(visitorIp: string): boolean {
 
 function buildSystemInstruction(): string {
   const catalog = products
-    .map((product) => "- " + product.name + " (" + product.category + "): valor ilustrativo " + formatPrice(product.priceInCents))
+    .map((product) => "- " + product.name + " (" + product.category + "): referência de preço " + formatPrice(product.priceInCents))
     .join("\n");
 
   return [
     "Você é uma assistente de demonstração deste conceito independente de experiência digital para a Louise Lingerie. Não represente a empresa nem fale em nome dela. Responda em português brasileiro, com gentileza e de forma breve.",
     "Responda somente sobre o conteúdo deste site. Use apenas os fatos abaixo; não invente medidas, disponibilidade, estoque, frete, prazos, políticas comerciais ou informações pessoais.",
-    "Esta página não é um site oficial. Os itens, imagens, variações, tamanhos e preços da vitrine são ilustrativos. Não há compra real, pagamento, pedido, cadastro ou envio.",
+    "Esta página não é um site oficial. Imagens, variações e tamanhos são demonstrativos. Os valores são referências por categoria pesquisadas no catálogo público de atacado em 08/10/2026; podem não corresponder ao modelo exibido nem ao preço atual. Não há compra real, pagamento, pedido, cadastro ou envio.",
     "A Louise Lingerie mantém loja online e operação de atacado em Fortaleza, e o site oficial informa envios para todo o Brasil. Não invente valores mínimos, descontos, prazos, estoque ou regras; condições atuais devem ser verificadas em https://www.louiselingerie.com.br/.",
     "A sacola é demonstrativa e fica salva apenas no navegador da pessoa. Ela permite selecionar tamanho, alterar quantidade, remover peças e consultar subtotal.",
     "Para perguntas sobre esta página, descreva somente as interações demonstrativas disponíveis. Para informações comerciais da Louise, indique o site oficial.",

@@ -19,7 +19,7 @@ export function Collection({ category, onCategoryChange, onAdded }: {
     <section className="collection section-container" id="colecao" aria-labelledby="collection-title">
       <div className="section-heading">
         <div><p className="eyebrow">VITRINE DEMONSTRATIVA</p><h2 id="collection-title">Peças para explorar.</h2></div>
-        <p className="section-description">Fotos, variações e valores servem apenas para demonstrar a interface. Consulte o catálogo oficial para conferir os produtos disponíveis.</p>
+        <p className="section-description">Fotos e variações são demonstrativas; os valores são referências por categoria pesquisadas no catálogo de atacado da Louise.</p>
       </div>
       <div className="filter-row">
         <div className="collection-filters" role="group" aria-label="Filtrar itens demonstrativos por categoria">
@@ -35,11 +35,11 @@ export function Collection({ category, onCategoryChange, onAdded }: {
               <span className="quick-view" aria-hidden="true"><Plus size={21} /><span>Ver detalhes</span></span>
             </button>
             <div className="product-meta"><div><h3>{product.name}</h3><p>{product.category}</p></div><p className="product-price">{formatPrice(product.priceInCents)}<small>*</small></p></div>
-            <span className="product-caption">Imagem e valor ilustrativos</span>
+            <span className="product-caption">Imagem ilustrativa · valor de referência</span>
           </m.article>)}
         </AnimatePresence>
       </div> : <p className="empty-filter">Não há itens de demonstração nesta categoria.</p>}
-      <p className="catalog-footnote"><span>*</span> Valores de exemplo, sem relação com preços ou condições comerciais vigentes. <a href="https://www.louiselingerie.com.br/produtos/" target="_blank" rel="noreferrer">Ver catálogo oficial <ArrowUpRight size={14} aria-hidden="true" /></a></p>
+      <p className="catalog-footnote"><span>*</span> Valores de referência do catálogo de atacado consultado em 08/10/2026; preços e disponibilidade podem mudar. <a href="https://www.louiselingerie.com.br/produtos/" target="_blank" rel="noreferrer">Conferir catálogo oficial <ArrowUpRight size={14} aria-hidden="true" /></a></p>
       <ProductDetails key={selected?.id ?? 'closed'} product={selected} onClose={() => setSelected(null)} onAdded={onAdded} returnFocus={returnFocus} />
     </section>
   )
