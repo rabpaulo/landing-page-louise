@@ -1,9 +1,7 @@
-# Valenne Lingerie
+# Louise Lingerie — conceito de experiência digital
 
-O projeto está em [valenne](./valenne). Consulte o [README completo](./valenne/README.md) para conhecer decisões e funcionalidades.
+Projeto conceitual independente de landing page, desenvolvido por Paulo Rabelo como demonstração técnica. Não é um site oficial nem possui vínculo com a Louise Lingerie.
 
-```bash
-cd valenne
-npm ci
-npm run dev
-```
+O código da aplicação está em [louise](./louise). Para executar, entre no diretório e rode npm ci seguido de npm run dev.
+
+Consulte o [README do projeto](./louise/README.md) para detalhes de arquitetura, interações e publicação.
