@@ -39,3 +39,8 @@ test-results
 reports
 .env
 .vercel
+
+# Local framework and project metadata
+/AGENTS.md
+/CLAUDE.md
+/.openai/
