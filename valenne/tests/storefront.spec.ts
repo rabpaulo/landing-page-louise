@@ -18,13 +18,17 @@ async function addAurora(page: import('@playwright/test').Page, size = 'M') {
 
 test('filters the catalogue without losing products', async ({ page }) => {
   await page.goto('/')
-  await expect(page.getByTestId('product-card')).toHaveCount(6)
-  for (const category of ['Conjuntos', 'Bodys', 'Linha dormir']) {
+  await expect(page.getByTestId('product-card')).toHaveCount(11)
+  for (const category of ['Conjuntos', 'Bodys', 'Roupas de Dormir']) {
     await page.getByRole('button', { name: category, exact: true }).click()
     await expect(page.getByTestId('product-card')).toHaveCount(2)
   }
+  for (const category of ['Croppeds', 'Calcinhas', 'Modeladores', 'Sutiãs | Tops', 'Moda Fitness']) {
+    await page.getByRole('button', { name: category, exact: true }).click()
+    await expect(page.getByTestId('product-card')).toHaveCount(1)
+  }
   await page.getByRole('button', { name: 'Todos', exact: true }).click()
-  await expect(page.getByTestId('product-card')).toHaveCount(6)
+  await expect(page.getByTestId('product-card')).toHaveCount(11)
 })
 
 test('requires a size and returns focus when details close', async ({ page }) => {

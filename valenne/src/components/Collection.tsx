@@ -6,6 +6,16 @@ import { categories } from '../types'
 import type { CategoryFilter, Product } from '../types'
 import { ProductDetails } from './ProductDetails'
 
+const swatchByColor: Record<string, string> = {
+  Vinho: 'wine',
+  Grafite: 'graphite',
+  'Rosa suave': 'rose',
+  'Rosa antigo': 'rose-antique',
+  'Off-white': 'ivory',
+  Nude: 'nude',
+  Ameixa: 'plum',
+}
+
 export function Collection({ onAdded }: { onAdded: (name: string) => void }) {
   const [category, setCategory] = useState<CategoryFilter>('Todos')
   const [selected, setSelected] = useState<Product | null>(null)
@@ -15,7 +25,7 @@ export function Collection({ onAdded }: { onAdded: (name: string) => void }) {
   return (
     <section className="collection section-container" id="colecao" aria-labelledby="collection-title">
       <h2 id="collection-title">Seu próximo favorito.</h2>
-      <p className="section-description">Do primeiro toque ao último detalhe, escolha o que combina com você.</p>
+      <p className="section-description">Da lingerie ao descanso e ao movimento, encontre a peça que acompanha cada momento.</p>
       <div className="filter-row"><div className="collection-filters" role="group" aria-label="Filtrar por categoria">{categories.map(option => <button className={option === category ? 'filter active' : 'filter'} aria-pressed={option === category} onClick={() => setCategory(option)} key={option}>{option}</button>)}</div><p className="product-count" aria-live="polite">{shown.length} peças</p></div>
       <div className="product-grid">
         <AnimatePresence mode="popLayout" initial={false}>
@@ -25,7 +35,7 @@ export function Collection({ onAdded }: { onAdded: (name: string) => void }) {
               <span className="quick-view" aria-hidden="true"><Plus size={22} /><span>Ver detalhes</span></span>
             </button>
             <div className="product-meta"><div><h3>{product.name}</h3><p>{product.fabric}</p></div><p className="product-price">{formatPrice(product.priceInCents)}</p></div>
-            <span className="color-detail"><span className={`color-swatch ${product.color === 'Vinho' ? 'wine' : product.color === 'Grafite' ? 'graphite' : 'rose'}`} aria-hidden="true" />{product.color}</span>
+            <span className="color-detail"><span className={`color-swatch ${swatchByColor[product.color] ?? 'rose'}`} aria-hidden="true" />{product.color}</span>
           </m.article>)}
         </AnimatePresence>
       </div>

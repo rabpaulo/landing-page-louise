@@ -26,16 +26,46 @@ export const products: readonly Product[] = [
     description: 'Linhas simples e toque macio. O body canelado que combina com a sua rotina, por dentro e por fora.',
   },
   {
-    id: 'serena', name: 'Pijama Serena', category: 'Linha dormir',
+    id: 'serena', name: 'Pijama Serena', category: 'Roupas de Dormir',
     image: '/images/serena.webp', alt: 'Pijama de cetim rosa com blusa de alças finas e shorts.',
     priceInCents: 14990, color: 'Rosa suave', fabric: 'Cetim de toque leve',
     description: 'Desacelere em um conjunto de cetim leve, com alças finas e shorts soltos. Um carinho no fim do dia.',
   },
   {
-    id: 'calma', name: 'Camisola Calma', category: 'Linha dormir',
+    id: 'calma', name: 'Camisola Calma', category: 'Roupas de Dormir',
     image: '/images/calma.webp', alt: 'Camisola curta de cetim grafite com alças finas.',
     priceInCents: 11990, color: 'Grafite', fabric: 'Cetim com caimento fluido',
     description: 'Cetim fluido e delicadeza nos detalhes. A camisola que convida a encontrar tempo para você.',
+  },
+  {
+    id: 'sutia-dalia', name: 'Sutiã Dália', category: 'Sutiãs | Tops',
+    image: '/images/sutia-dalia.webp', alt: 'Sutiã meia-taça vinho com renda floral e alças ajustáveis sobre linho rosado.',
+    priceInCents: 7990, color: 'Vinho', fabric: 'Renda floral e microfibra',
+    description: 'Meia-taça em renda floral, com alças ajustáveis e acabamento macio para o uso diário.',
+  },
+  {
+    id: 'calcinha-tulipa', name: 'Calcinha Tulipa', category: 'Calcinhas',
+    image: '/images/calcinha-tulipa.webp', alt: 'Calcinha rosa antigo de cintura alta em malha canelada com renda nas laterais.',
+    priceInCents: 3990, color: 'Rosa antigo', fabric: 'Malha canelada com renda',
+    description: 'Cintura alta, toque macio e recortes delicados de renda nas laterais.',
+  },
+  {
+    id: 'cropped-mare', name: 'Cropped Maré', category: 'Croppeds',
+    image: '/images/cropped-mare.webp', alt: 'Cropped off-white de malha canelada com mangas curtas e decote quadrado.',
+    priceInCents: 8990, color: 'Off-white', fabric: 'Malha canelada',
+    description: 'Malha canelada e decote quadrado em uma peça leve para usar com lingerie ou no dia a dia.',
+  },
+  {
+    id: 'modelador-nuvem', name: 'Modelador Nuvem', category: 'Modeladores',
+    image: '/images/modelador-nuvem.webp', alt: 'Calcinha modeladora nude de cintura alta em microfibra lisa.',
+    priceInCents: 8990, color: 'Nude', fabric: 'Microfibra sem costura',
+    description: 'Cintura alta e microfibra lisa para vestir sob diferentes peças com discrição.',
+  },
+  {
+    id: 'conjunto-movimento', name: 'Conjunto Movimento', category: 'Moda Fitness',
+    image: '/images/conjunto-movimento.webp', alt: 'Top esportivo e legging ameixa de cintura alta em malha esportiva.',
+    priceInCents: 16990, color: 'Ameixa', fabric: 'Malha esportiva',
+    description: 'Top esportivo e legging de cintura alta em malha flexível para acompanhar o movimento.',
   },
 ]
 

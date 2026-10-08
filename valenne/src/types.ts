@@ -1,6 +1,16 @@
 export const sizes = ['P', 'M', 'G', 'GG'] as const
 export type Size = (typeof sizes)[number]
-export const categories = ['Todos', 'Conjuntos', 'Bodys', 'Linha dormir'] as const
+export const categories = [
+  'Todos',
+  'Conjuntos',
+  'Bodys',
+  'Croppeds',
+  'Calcinhas',
+  'Roupas de Dormir',
+  'Modeladores',
+  'Sutiãs | Tops',
+  'Moda Fitness',
+] as const
 export type CategoryFilter = (typeof categories)[number]
 export type Category = Exclude<CategoryFilter, 'Todos'>
 

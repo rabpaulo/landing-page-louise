@@ -57,6 +57,46 @@
         "width": 1086,
         "height": 1448
       }
+    },
+    {
+      "asset": "sutia-dalia.webp",
+      "prompt": "Use case: ecommerce product photography for a Brazilian lingerie boutique. Asset: one original women's demi-cup bra, no person. Show the complete deep-wine floral-lace bra, including both cups, center gore, side wings and full shoulder straps, arranged flat and centered with every edge comfortably inside the frame and generous empty space around it. Vertical 3:4 portrait crop, true overhead view on warm blush linen, soft natural side light, refined premium still-life, delicate realistic lace and opaque lined cups. Keep the entire garment visible; do not crop any edge. No model, skin, mannequin, extra garments, logo, text, watermark, or collage.",
+      "originalDimensions": {
+        "width": 1086,
+        "height": 1448
+      }
+    },
+    {
+      "asset": "calcinha-tulipa.webp",
+      "prompt": "Use case: ecommerce product photography for a Brazilian lingerie boutique. Asset: one original high-waisted women's brief, no person. Show a dusty-rose high-waisted brief with soft ribbed fabric and a small lace inset, arranged flat on warm ivory linen with a folded mauve textile nearby. Vertical 3:4 crop, premium still-life editorial, soft natural window light, realistic seams and fabric, clean recognizable product silhouette. No model, no skin, no mannequin, no logo, no text, no watermark.",
+      "originalDimensions": {
+        "width": 1086,
+        "height": 1448
+      }
+    },
+    {
+      "asset": "cropped-mare.webp",
+      "prompt": "Use case: ecommerce product photography for a Brazilian lingerie and lounge-wear boutique. Asset: one original cropped knit top, no person. Show a short-sleeved warm-ivory rib-knit cropped top with a simple square neckline and fine finishing, arranged on muted rose linen with subtle natural folds. Vertical 3:4 crop, premium still-life editorial, soft window light, realistic cloth texture, clearly a casual cropped top. No model, no skin, no mannequin, no logo, no text, no watermark.",
+      "originalDimensions": {
+        "width": 1086,
+        "height": 1448
+      }
+    },
+    {
+      "asset": "modelador-nuvem.webp",
+      "prompt": "Use case: ecommerce product photography for a Brazilian lingerie boutique. Asset: one original women's shaping garment, no person. Show a high-waisted smoothing brief in warm nude beige, with wide supportive waistband and matte seamless microfiber, laid flat on soft cream linen with a muted rose fabric accent. Vertical 3:4 crop, premium understated still-life editorial, gentle window light, accurate garment shape and details. No model, no skin, no mannequin, no logo, no text, no watermark.",
+      "originalDimensions": {
+        "width": 1086,
+        "height": 1448
+      }
+    },
+    {
+      "asset": "conjunto-movimento.webp",
+      "prompt": "Use case: ecommerce product photography for a Brazilian lingerie and activewear boutique. Asset: a coordinated women's sports bra and leggings set, no person. Show a plum-colored high-support sports bra and matching high-waisted leggings folded with the bra clearly visible, on a warm light-stone studio surface with one muted rose textile accent. Vertical 3:4 crop, premium editorial still-life, soft natural side light, realistic performance fabric and stitching, clean recognizable silhouette. No model, no skin, no mannequin, no logo, no text, no watermark.",
+      "originalDimensions": {
+        "width": 1086,
+        "height": 1448
+      }
     }
   ]
 }
