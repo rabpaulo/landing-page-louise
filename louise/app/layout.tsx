@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     siteName: "Louise Lingerie · Conceito independente",
     locale: "pt_BR",
     type: "website",
-    images: [{ url: "/images/campaign.webp", alt: "Imagem ilustrativa de lingerie em tons de vinho." }],
+    images: [{ url: "/images/hero.webp", alt: "Conjunto de lingerie vinho com renda floral, fotografado sobre tecido claro." }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Louise Lingerie — Conceito de Experiência Digital",
     description: "Projeto conceitual independente desenvolvido como demonstração técnica de desenvolvimento web.",
-    images: ["/images/campaign.webp"],
+    images: ["/images/hero.webp"],
   },
   icons: {
     icon: "/favicon.svg",

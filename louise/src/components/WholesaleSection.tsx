@@ -10,7 +10,7 @@ const wholesaleDetails = [
 export function WholesaleSection() {
   return (
     <section className="wholesale-section" id="atacado" aria-labelledby="wholesale-title">
-      <div className="wholesale-image"><img src="/images/campaign-720.webp" alt="Peças de lingerie em tons de vinho fotografadas sobre linho, em imagem ilustrativa." width="720" height="480" loading="lazy" decoding="async" /></div>
+      <div className="wholesale-image"><img src="/images/wholesale-assortment.webp" alt="Seleção ilustrativa de body, camisola e conjuntos em renda e malha sobre linho claro." width="1400" height="933" loading="lazy" decoding="async" /></div>
       <Reveal className="wholesale-copy">
         <p className="eyebrow">ATACADO LOUISE</p>
         <h2 id="wholesale-title">Moda íntima para o seu negócio.</h2>
