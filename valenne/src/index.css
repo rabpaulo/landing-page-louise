@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@font-face { font-family: 'Manrope'; src: url('/fonts/manrope-latin-400-normal.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Manrope'; src: url('/fonts/manrope-latin-500-normal.woff2') format('woff2'); font-style: normal; font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Manrope'; src: url('/fonts/manrope-latin-600-normal.woff2') format('woff2'); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Manrope'; src: url('/fonts/manrope-latin-700-normal.woff2') format('woff2'); font-style: normal; font-weight: 700; font-display: swap; }
+
+@theme { --font-sans: 'Manrope', sans-serif; }
+
+:root { font-family: 'Manrope', sans-serif; color: #292527; background: #fcfafb; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; --surface: #fcfafb; --surface-tint: #f0e5e8; --surface-soft: #f7f1f3; --text: #292527; --muted: #71646b; --accent: #733349; --accent-hover: #592537; --border: #dfd2d8; --on-accent: #fff5f8; --overlay: rgb(32 20 26 / .45); color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --surface: #211c20; --surface-tint: #31272e; --surface-soft: #292127; --text: #f5eaf0; --muted: #c5aebc; --accent: #e8a6bc; --accent-hover: #f0bed0; --border: #55414b; --on-accent: #301c24; --overlay: rgb(7 4 6 / .7); color: var(--text); background: var(--surface); } }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; color: inherit; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; object-fit: cover; }
+button:disabled { cursor: not-allowed; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+::selection { background: var(--accent); color: var(--on-accent); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }

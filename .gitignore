@@ -1,0 +1,4 @@
+/valenne-codigo.zip
+.env*
+.dev.vars*
+.vercel/
