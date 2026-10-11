@@ -4,11 +4,13 @@
 @font-face { font-family: 'Manrope'; src: url('/fonts/manrope-latin-500-normal.woff2') format('woff2'); font-style: normal; font-weight: 500; font-display: swap; }
 @font-face { font-family: 'Manrope'; src: url('/fonts/manrope-latin-600-normal.woff2') format('woff2'); font-style: normal; font-weight: 600; font-display: swap; }
 @font-face { font-family: 'Manrope'; src: url('/fonts/manrope-latin-700-normal.woff2') format('woff2'); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('/fonts/cormorant-garamond-latin-500-normal.woff2') format('woff2'); font-style: normal; font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('/fonts/cormorant-garamond-latin-600-normal.woff2') format('woff2'); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Cormorant Garamond'; src: url('/fonts/cormorant-garamond-latin-500-italic.woff2') format('woff2'); font-style: italic; font-weight: 500; font-display: swap; }
 
-@theme { --font-sans: 'Manrope', sans-serif; }
+@theme { --font-sans: 'Manrope', sans-serif; --font-serif: 'Cormorant Garamond', Georgia, serif; }
 
-:root { font-family: 'Manrope', sans-serif; color: #302b29; background: #fcfbf8; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; --surface: #fcfbf8; --surface-tint: #eee8e1; --surface-soft: #f5f2ed; --text: #302b29; --muted: #736963; --accent: #68474d; --accent-hover: #52353b; --border: #ddd4cc; --on-accent: #fffaf5; --overlay: rgb(31 24 25 / .52); color-scheme: light dark; }
-@media (prefers-color-scheme: dark) { :root { --surface: #211e1c; --surface-tint: #302a27; --surface-soft: #292421; --text: #f6f0ea; --muted: #c5b9af; --accent: #ddb99f; --accent-hover: #edcbb4; --border: #554941; --on-accent: #302620; --overlay: rgb(7 5 5 / .72); color: var(--text); background: var(--surface); } }
+:root { font-family: 'Manrope', sans-serif; color: #302b29; background: #fcfbf8; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; --surface: #fcfbf8; --surface-tint: #eee8e1; --surface-soft: #f5f2ed; --text: #302b29; --muted: #736963; --accent: #68474d; --accent-hover: #52353b; --border: #ddd4cc; --on-accent: #fffaf5; --overlay: rgb(31 24 25 / .52); --serif: 'Cormorant Garamond', Georgia, serif; color-scheme: light; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 95px; }
 body { margin: 0; min-width: 320px; }
