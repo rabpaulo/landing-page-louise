@@ -34,7 +34,7 @@ export default function App() {
           <div className="hero-copy">
             <m.div initial={false} animate={{ y: 0, opacity: 1 }} transition={{ duration: reduce ? 0 : .55, ease: [.16, 1, .3, 1] }}>
               <p className="eyebrow">LOUISE LINGERIE <span aria-hidden="true">·</span> FORTALEZA</p>
-              <h1 id="hero-title">Moda íntima para seus momentos — e para o seu negócio.</h1>
+              <h1 id="hero-title">Moda íntima para seus momentos <em>e para o seu negócio.</em></h1>
               <p className="hero-description">Conjuntos, peças para o dia a dia e opções para dormir. Conheça a Louise e encontre o caminho certo para comprar no varejo ou abastecer sua loja.</p>
               <div className="hero-actions">
                 <a className="button button-primary" href="#categorias">Explorar categorias <ArrowRight size={18} aria-hidden="true" /></a>
