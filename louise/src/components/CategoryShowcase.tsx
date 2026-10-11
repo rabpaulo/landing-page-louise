@@ -11,8 +11,8 @@ export function CategoryShowcase({ onSelect }: { onSelect: (category: CategoryFi
   return (
     <section className="category-section section-container" id="categorias" aria-labelledby="categories-title">
       <div className="section-heading">
-        <div><p className="eyebrow">CATEGORIAS LOUISE</p><h2 id="categories-title">Comece pelo que procura.</h2></div>
-        <p className="section-description">Uma amostra de algumas linhas disponíveis no catálogo da Louise.</p>
+        <div><p className="eyebrow">CATEGORIAS MARÉ</p><h2 id="categories-title">Comece pelo que procura.</h2></div>
+        <p className="section-description">Uma amostra das linhas da Maré Íntima.</p>
       </div>
       <div className="category-grid">
         {featured.map((item, index) => (

@@ -4,7 +4,7 @@ import { productById } from '../data/products'
 import { isSize } from '../types'
 import type { CartItem, Size } from '../types'
 
-const STORAGE_KEY = 'louise-demo.cart.v1'
+const STORAGE_KEY = 'mare-demo.cart.v1'
 export const MAX_QUANTITY = 99
 type Action =
   | { type: 'restore'; items: CartItem[] }

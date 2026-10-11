@@ -23,14 +23,14 @@ export function WebMCP() {
     const lifecycle = new AbortController()
     const tools: Tool[] = [
       {
-        name: 'list_louise_concept_products', title: 'Consultar a vitrine demonstrativa',
-        description: 'Lista itens demonstrativos e valores de referência por categoria deste conceito independente. Confirme preços atuais no catálogo oficial; a ferramenta não realiza compras.',
+        name: 'list_mare_concept_products', title: 'Consultar a vitrine demonstrativa',
+        description: 'Lista itens e valores ilustrativos da Maré Íntima, uma marca fictícia deste conceito independente. A ferramenta não realiza compras.',
         inputSchema: { type: 'object', properties: {}, additionalProperties: false },
         annotations: { readOnlyHint: true, untrustedContentHint: false },
         execute: () => ({ demo: true, official: false, products: products.map(({ id, name, category, priceInCents }) => ({ id, name, category, priceInCents, sizes: ['P', 'M', 'G', 'GG'] })) }),
       },
       {
-        name: 'add_to_louise_demo_bag', title: 'Adicionar à sacola demonstrativa',
+        name: 'add_to_mare_demo_bag', title: 'Adicionar à sacola demonstrativa',
         description: 'Adiciona uma unidade de um produto e tamanho à sacola local e atualiza o contador visível. Apenas simulação; não cria pedidos nem pagamentos.',
         inputSchema: { type: 'object', properties: { productId: { type: 'string' }, size: { type: 'string', enum: ['P', 'M', 'G', 'GG'] } }, required: ['productId', 'size'], additionalProperties: false },
         annotations: { readOnlyHint: false, untrustedContentHint: false },

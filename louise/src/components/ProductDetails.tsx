@@ -27,7 +27,7 @@ export function ProductDetails({ product, onClose, onAdded, returnFocus }: {
               <p className="product-category">{product.category}</p>
               <Dialog.Title>{product.name}</Dialog.Title>
               <p className="detail-price">{formatPrice(product.priceInCents)}</p>
-              <Dialog.Description>Imagem e variações são demonstrativas. O preço é uma referência por categoria, não uma oferta para esta peça; confira o valor vigente no catálogo oficial.</Dialog.Description>
+              <Dialog.Description>Imagem e variações são demonstrativas. O preço é ilustrativo e não representa uma oferta real.</Dialog.Description>
               <dl className="product-spec"><div><dt>Linha</dt><dd>{product.category}</dd></div><div><dt>Dados</dt><dd>Ilustrativos</dd></div></dl>
               <fieldset className="size-selector"><legend>Escolha seu tamanho</legend><div className="size-options">{sizes.map(option => <label className="size-option" key={option}><input type="radio" name="size" value={option} checked={size === option} onChange={() => setSize(option)} /><span>{option}</span></label>)}</div></fieldset>
               <p className="size-hint">{size ? `Tamanho ${size} selecionado.` : 'Selecione um tamanho para adicionar.'}</p>

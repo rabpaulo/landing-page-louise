@@ -1,6 +1,6 @@
 # Validação da entrega
 
-Verificação executada em 8 de outubro de 2026 na versão conceitual Louise Lingerie.
+Verificação executada em 8 de outubro de 2026 na versão conceitual anterior ao rebranding para a marca fictícia Maré Íntima.
 
 ## Verificações
 
@@ -14,7 +14,7 @@ Verificação executada em 8 de outubro de 2026 na versão conceitual Louise Lin
 
 ## Limites da demonstração
 
-Imagens, combinações e tamanhos são demonstrativos; os valores são referências por categoria do catálogo de atacado consultado em 8 de outubro de 2026. A sacola funciona no navegador, mas o checkout não envia pedidos nem pagamentos. O assistente é uma demonstração e não representa o atendimento oficial da marca. Não foram executados testes de pedido, pagamento, estoque, autenticação, chave Gemini nem serviços de produção.
+Imagens, combinações e tamanhos são demonstrativos; nome, endereço e valores da marca Maré Íntima são fictícios. A sacola funciona no navegador, mas o checkout não envia pedidos nem pagamentos. O assistente é uma demonstração e não representa atendimento real. Não foram executados testes de pedido, pagamento, estoque, autenticação, chave Gemini nem serviços de produção.
 
 Não foi feita uma nova medição Lighthouse nesta versão. Os relatórios antigos foram descartados porque mediam uma versão anterior e não descrevem este redesign.
 

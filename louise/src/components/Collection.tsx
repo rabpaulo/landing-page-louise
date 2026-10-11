@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { AnimatePresence, m, useReducedMotion } from 'motion/react'
-import { ArrowUpRight, Plus } from '@phosphor-icons/react'
+import { Plus } from '@phosphor-icons/react'
 import { products, formatPrice } from '../data/products'
 import { categories } from '../types'
 import type { CategoryFilter, Product } from '../types'
@@ -19,7 +19,7 @@ export function Collection({ category, onCategoryChange, onAdded }: {
     <section className="collection section-container" id="colecao" aria-labelledby="collection-title">
       <div className="section-heading">
         <div><p className="eyebrow">VITRINE DEMONSTRATIVA</p><h2 id="collection-title">Peças para explorar.</h2></div>
-        <p className="section-description">Fotos e variações são demonstrativas; os valores são referências por categoria pesquisadas no catálogo de atacado da Louise.</p>
+        <p className="section-description">Fotos, variações e valores são demonstrativos.</p>
       </div>
       <div className="filter-row">
         <div className="collection-filters" role="group" aria-label="Filtrar itens demonstrativos por categoria">
@@ -35,11 +35,11 @@ export function Collection({ category, onCategoryChange, onAdded }: {
               <span className="quick-view" aria-hidden="true"><Plus size={21} /><span>Ver detalhes</span></span>
             </button>
             <div className="product-meta"><div><h3>{product.name}</h3><p>{product.category}</p></div><p className="product-price">{formatPrice(product.priceInCents)}<small>*</small></p></div>
-            <span className="product-caption">Imagem ilustrativa · valor de referência</span>
+            <span className="product-caption">Imagem e valor ilustrativos</span>
           </m.article>)}
         </AnimatePresence>
       </div> : <p className="empty-filter">Não há itens de demonstração nesta categoria.</p>}
-      <p className="catalog-footnote"><span>*</span> Valores de referência do catálogo de atacado consultado em 08/10/2026; preços e disponibilidade podem mudar. <a href="https://www.louiselingerie.com.br/produtos/" target="_blank" rel="noreferrer">Conferir catálogo oficial <ArrowUpRight size={14} aria-hidden="true" /></a></p>
+      <p className="catalog-footnote"><span>*</span> Valores ilustrativos de uma marca fictícia; não representam ofertas reais.</p>
       <ProductDetails key={selected?.id ?? 'closed'} product={selected} onClose={() => setSelected(null)} onAdded={onAdded} returnFocus={returnFocus} />
     </section>
   )

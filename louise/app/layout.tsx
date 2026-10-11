@@ -5,20 +5,20 @@ import "../src/App.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://landing-page-louise.vercel.app"),
-  title: "Louise Lingerie — Conceito de Experiência Digital",
+  title: "Maré Íntima — Conceito de Experiência Digital",
   description: "Projeto conceitual independente desenvolvido como demonstração técnica de desenvolvimento web.",
   openGraph: {
-    title: "Louise Lingerie — Conceito de Experiência Digital",
+    title: "Maré Íntima — Conceito de Experiência Digital",
     description: "Projeto conceitual independente desenvolvido como demonstração técnica de desenvolvimento web.",
     url: "https://landing-page-louise.vercel.app",
-    siteName: "Louise Lingerie · Conceito independente",
+    siteName: "Maré Íntima · Conceito independente",
     locale: "pt_BR",
     type: "website",
     images: [{ url: "/images/hero.webp", alt: "Conjunto de lingerie vinho com renda floral, fotografado sobre tecido claro." }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Louise Lingerie — Conceito de Experiência Digital",
+    title: "Maré Íntima — Conceito de Experiência Digital",
     description: "Projeto conceitual independente desenvolvido como demonstração técnica de desenvolvimento web.",
     images: ["/images/hero.webp"],
   },

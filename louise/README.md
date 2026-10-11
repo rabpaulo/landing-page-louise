@@ -1,12 +1,10 @@
-# Louise Lingerie — conceito de experiência digital
+# Maré Íntima — conceito de experiência digital
 
-Projeto conceitual desenvolvido por Paulo Rabelo como demonstração técnica independente de desenvolvimento web. Não é um site oficial nem possui vínculo com a Louise Lingerie.
+Projeto conceitual desenvolvido por Paulo Rabelo como demonstração técnica independente de desenvolvimento web. Maré Íntima é uma marca fictícia, criada para esta demonstração e sem vínculo com empresas reais.
 
-## Referência de negócio
+## Marca fictícia
 
-O site público da Louise apresenta operação de atacado, envio para todo o Brasil e categorias como conjuntos, sutiãs e tops, bodys, croppeds e roupas de dormir. A marca também informa presença no Centro Fashion Fortaleza. Valores mínimos, descontos, estoque e prazos podem variar; consulte sempre o site oficial: https://www.louiselingerie.com.br/.
-
-A vitrine local é ilustrativa. As fotos, combinações e tamanhos são demonstrativos; os valores são referências por categoria pesquisadas no catálogo de atacado. Consulte [as referências e a data da pesquisa](docs/precificacao.md) e confirme sempre o preço atual no site oficial.
+A Maré Íntima imagina uma marca de moda íntima com loja online, ateliê próprio e canal de atacado para revendedoras, com categorias como conjuntos, sutiãs e tops, bodys, croppeds e roupas de dormir. Nome, endereço, produtos, fotos, tamanhos e valores são ilustrativos.
 
 ## Executar
 
@@ -23,9 +21,9 @@ Sem GEMINI_API_KEY, as interações de navegação, filtro e sacola continuam di
 - Cartões de categoria selecionam a categoria correspondente na vitrine.
 - Filtros acessíveis refinam a seleção e anunciam a quantidade de itens.
 - Detalhes do item permitem escolher um tamanho demonstrativo e adicionar à sacola.
-- A sacola local agrupa tamanhos, altera quantidades, remove itens, calcula subtotais com valores de referência e persiste no navegador.
+- A sacola local agrupa tamanhos, altera quantidades, remove itens, calcula subtotais com valores ilustrativos e persiste no navegador.
 - O menu mobile, FAQ e assistente têm estados de abertura, fechamento e foco.
-- Links comerciais levam ao site oficial da Louise.
+- Não há links para sites de marcas reais; os chamados levam a seções da própria página.
 - A sacola e a ferramenta WebMCP não criam pedidos ou pagamentos.
 
 ## Organização
@@ -34,9 +32,9 @@ Sem GEMINI_API_KEY, as interações de navegação, filtro e sacola continuam di
 - src/components: header, categorias, vitrine, atacado, informação institucional, FAQ, sacola e assistente.
 - src/data/products.ts: catálogo demonstrativo tipado.
 - src/cart: estado da sacola, validação e persistência local.
-- src/server/gemini-chat.ts: endpoint seguro do assistente, com limite de mensagens e sem alegações em nome da Louise.
+- src/server/gemini-chat.ts: endpoint seguro do assistente, com limite de mensagens e restrito a informações da demonstração.
 - tests: testes de interação, responsividade e acessibilidade.
-- public/images: fotografias editoriais conceituais em WebP; não são imagens do catálogo oficial.
+- public/images: fotografias editoriais conceituais em WebP; não são imagens de produtos reais.
 
 ## Verificações
 

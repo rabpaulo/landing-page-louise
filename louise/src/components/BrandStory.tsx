@@ -1,19 +1,19 @@
-import { ArrowUpRight, MapPin } from '@phosphor-icons/react'
+import { ArrowRight, MapPin } from '@phosphor-icons/react'
 import { Reveal } from './Reveal'
 
 export function BrandStory() {
   return (
     <section className="about-section section-container" id="sobre" aria-labelledby="about-title">
       <Reveal className="about-copy">
-        <p className="eyebrow">SOBRE A LOUISE</p>
-        <h2 id="about-title">Uma marca de Fortaleza com atuação no atacado.</h2>
-        <p>Além da loja online, a Louise mantém presença no Centro Fashion Fortaleza e atende quem compra moda íntima para revender. O catálogo público reúne linhas como conjuntos, bodys, croppeds, peças para dormir e sutiãs.</p>
-        <a className="text-link" href="https://www.louiselingerie.com.br/" target="_blank" rel="noreferrer">Conhecer a Louise <ArrowUpRight size={16} aria-hidden="true" /></a>
+        <p className="eyebrow">SOBRE A MARÉ</p>
+        <h2 id="about-title">Uma marca do litoral com atuação no atacado.</h2>
+        <p>A Maré Íntima é uma marca fictícia criada para esta demonstração. Ela imagina uma operação com loja online, ateliê próprio e atendimento a quem compra moda íntima para revender, com linhas de conjuntos, bodys, croppeds, peças para dormir e sutiãs.</p>
+        <a className="text-link" href="#colecao">Conhecer a vitrine <ArrowRight size={16} aria-hidden="true" /></a>
       </Reveal>
       <Reveal className="about-location">
         <div className="about-location-image"><img src="/images/lace-detail.webp" alt="Close editorial de renda vinho, cetim marfim e linha sobre uma superfície de areia." width="1400" height="933" loading="lazy" decoding="async" /></div>
-        <p><MapPin size={18} aria-hidden="true" /><span>Centro Fashion Fortaleza<br /><small>Setor Branco · corredor Monsenhor Tabosa · loja 2133</small></span></p>
-        <small className="source-note">Referências consultadas no site e no catálogo públicos da marca. Endereço e informações comerciais podem mudar.</small>
+        <p><MapPin size={18} aria-hidden="true" /><span>Ateliê Maré Íntima<br /><small>Rua das Marés, 120 · Endereço fictício</small></span></p>
+        <small className="source-note">Marca, endereço e informações comerciais são fictícios e servem apenas para demonstração.</small>
       </Reveal>
     </section>
   )

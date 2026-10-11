@@ -19,7 +19,7 @@ type GeminiStreamChunk = {
 const welcomeMessage: ChatMessage = {
   id: 0,
   role: 'assistant',
-  content: 'Olá! Posso explicar como esta demonstração funciona e indicar onde conferir informações atualizadas da Louise.',
+  content: 'Olá! Posso explicar como esta demonstração funciona e contar mais sobre a Maré Íntima, uma marca fictícia.',
 }
 
 const suggestions = [
