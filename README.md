@@ -1,6 +1,6 @@
-# Louise Lingerie — experiência digital conceitual
+# Maré Íntima — experiência digital conceitual
 
-Projeto conceitual desenvolvido por Paulo Rabelo como demonstração técnica independente de desenvolvimento web. **Não é um site oficial e não possui vínculo com a Louise Lingerie.**
+Projeto conceitual desenvolvido por Paulo Rabelo como demonstração técnica independente de desenvolvimento web. **Maré Íntima é uma marca fictícia, sem vínculo com empresas reais.**
 
 O código da aplicação fica em [`louise/`](./louise/). O catálogo, os preços e as imagens são ilustrativos; a sacola funciona apenas no navegador e não envia pedidos nem pagamentos.
 
@@ -78,4 +78,3 @@ Para publicar na Vercel, configure **Root Directory** como `louise`. Se o assist
 - [Guia detalhado da aplicação](./louise/README.md)
 - [Validação da entrega](./louise/docs/validacao.md)
 - [Referências e prompts de imagens](./louise/docs/imagens.md)
-- [Site oficial da Louise Lingerie](https://www.louiselingerie.com.br/)
