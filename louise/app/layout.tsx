@@ -5,10 +5,10 @@ import "../src/App.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://landing-page-louise.vercel.app"),
-  title: "Maré Íntima — Conceito de Experiência Digital",
+  title: "Maré Íntima - Conceito de Experiência Digital",
   description: "Projeto conceitual independente desenvolvido como demonstração técnica de desenvolvimento web.",
   openGraph: {
-    title: "Maré Íntima — Conceito de Experiência Digital",
+    title: "Maré Íntima - Conceito de Experiência Digital",
     description: "Projeto conceitual independente desenvolvido como demonstração técnica de desenvolvimento web.",
     url: "https://landing-page-louise.vercel.app",
     siteName: "Maré Íntima · Conceito independente",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Maré Íntima — Conceito de Experiência Digital",
+    title: "Maré Íntima - Conceito de Experiência Digital",
     description: "Projeto conceitual independente desenvolvido como demonstração técnica de desenvolvimento web.",
     images: ["/images/hero.webp"],
   },

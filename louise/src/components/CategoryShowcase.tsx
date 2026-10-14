@@ -1,3 +1,6 @@
+import { m, useReducedMotion } from 'motion/react'
+import { ProgressiveImage } from './ProgressiveImage'
+import { Reveal } from './Reveal'
 import type { CategoryFilter } from '../types'
 
 const featured = [
@@ -8,19 +11,47 @@ const featured = [
 ]
 
 export function CategoryShowcase({ onSelect }: { onSelect: (category: CategoryFilter) => void }) {
+  const reduce = useReducedMotion()
+
   return (
     <section className="category-section section-container" id="categorias" aria-labelledby="categories-title">
-      <div className="section-heading">
-        <div><p className="eyebrow">CATEGORIAS MARÉ</p><h2 id="categories-title">Comece pelo que procura.</h2></div>
+      <Reveal className="section-heading" direction="up">
+        <div>
+          <p className="eyebrow">CATEGORIAS MARÉ</p>
+          <h2 id="categories-title">Comece pelo que procura.</h2>
+        </div>
         <p className="section-description">Uma amostra das linhas da Maré Íntima.</p>
-      </div>
+      </Reveal>
       <div className="category-grid">
         {featured.map((item, index) => (
-          <a className={'category-card category-card-' + (index + 1)} href="#colecao" key={item.label} onClick={() => onSelect(item.filter)}>
-            <img src={item.image} alt={item.alt} width="640" height="853" loading="lazy" decoding="async" />
+          <m.a
+            className={'category-card category-card-' + (index + 1)}
+            href="#colecao"
+            key={item.label}
+            onClick={() => onSelect(item.filter)}
+            initial={reduce ? false : { opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{
+              duration: reduce ? 0 : 0.6,
+              delay: reduce ? 0 : index * 0.08,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            whileHover={reduce ? undefined : { y: -3 }}
+          >
+            <ProgressiveImage
+              src={item.image}
+              alt={item.alt}
+              width={640}
+              height={853}
+              wrapperClassName="category-card-img-wrap"
+            />
             <span className="category-card-shade" aria-hidden="true" />
-            <span className="category-card-label">{item.label}<span aria-hidden="true">↗</span></span>
-          </a>
+            <span className="category-card-label">
+              {item.label}
+              <span className="category-arrow" aria-hidden="true">↗</span>
+            </span>
+          </m.a>
         ))}
       </div>
     </section>

@@ -19,7 +19,7 @@ export function Footer() {
         <p>Projeto conceitual independente. Maré Íntima é uma marca fictícia, sem relação com empresas reais.</p>
         <small>Desenvolvido por Paulo Rabelo como demonstração técnica independente de desenvolvimento web.</small>
       </div>
-      <div className="footer-bottom"><span>© 2026 · Maré Íntima — marca fictícia</span><span>Demonstração técnica</span></div>
+      <div className="footer-bottom"><span>© 2026 · Maré Íntima - marca fictícia</span><span>Demonstração técnica</span></div>
     </footer>
   )
 }

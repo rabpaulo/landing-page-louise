@@ -1,4 +1,5 @@
 import { ArrowRight, Plus } from '@phosphor-icons/react'
+import { Reveal } from './Reveal'
 
 const questions = [
   { question: 'Como funciona o atacado?', answer: 'Nesta demonstração, a seção de atacado mostra como uma marca poderia apresentar seu canal para revendedoras. Pedido mínimo, preços e descontos não são definidos, pois a marca é fictícia.' },
@@ -10,8 +11,27 @@ const questions = [
 export function FAQ() {
   return (
     <section className="faq section-container" id="duvidas" aria-labelledby="faq-title">
-      <div className="faq-heading"><p className="eyebrow">PERGUNTAS FREQUENTES</p><h2 id="faq-title">Antes de continuar.</h2><p className="section-description">O que você precisa saber sobre esta demonstração.</p><a className="faq-official-link" href="#colecao">Voltar à vitrine <ArrowRight size={15} aria-hidden="true" /></a></div>
-      <div className="faq-list">{questions.map(item => <details key={item.question}><summary>{item.question}<Plus size={19} aria-hidden="true" /></summary><p>{item.answer}</p></details>)}</div>
+      <Reveal className="faq-heading" direction="up">
+        <p className="eyebrow">PERGUNTAS FREQUENTES</p>
+        <h2 id="faq-title">Antes de continuar.</h2>
+        <p className="section-description">O que você precisa saber sobre esta demonstração.</p>
+        <a className="faq-official-link" href="#colecao">
+          Voltar à vitrine <ArrowRight size={15} aria-hidden="true" />
+        </a>
+      </Reveal>
+      <div className="faq-list">
+        {questions.map((item, index) => (
+          <Reveal key={item.question} delay={index * 0.06} direction="up">
+            <details>
+              <summary>
+                <span>{item.question}</span>
+                <Plus size={19} aria-hidden="true" />
+              </summary>
+              <p>{item.answer}</p>
+            </details>
+          </Reveal>
+        ))}
+      </div>
     </section>
   )
 }
