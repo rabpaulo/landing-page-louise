@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import * as Dialog from '@radix-ui/react-dialog'
+import { AnimatePresence, m } from 'motion/react'
 import { Bag, CheckCircle, Minus, Plus, Trash, X } from '@phosphor-icons/react'
 import { MAX_QUANTITY, useCart } from '../cart/CartProvider'
 import { formatPrice, productById } from '../data/products'
@@ -8,12 +9,27 @@ export function CartDrawer() {
   const [open, setOpen] = useState(false)
   const [finished, setFinished] = useState(false)
   const { items, count, subtotal, setQuantity, removeItem } = useCart()
+
   return (
     <Dialog.Root open={open} onOpenChange={value => { setOpen(value); setFinished(false) }}>
       <Dialog.Trigger asChild>
         <button className="icon-button bag-trigger" aria-label={`Abrir sacola, ${count} ${count === 1 ? 'item' : 'itens'}`}>
           <Bag size={24} aria-hidden="true" />
-          {count > 0 && <span className="bag-count" aria-hidden="true">{count}</span>}
+          <AnimatePresence>
+            {count > 0 && (
+              <m.span
+                key={count}
+                className="bag-count"
+                aria-hidden="true"
+                initial={{ scale: 0.6, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.6, opacity: 0 }}
+                transition={{ type: 'spring', stiffness: 500, damping: 25 }}
+              >
+                {count}
+              </m.span>
+            )}
+          </AnimatePresence>
         </button>
       </Dialog.Trigger>
       <Dialog.Portal>

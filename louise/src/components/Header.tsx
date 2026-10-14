@@ -1,5 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog'
-import { List, X } from '@phosphor-icons/react'
+import { ArrowUpRight, List, X } from '@phosphor-icons/react'
 import { CartDrawer } from './CartDrawer'
 
 const links = [
@@ -25,7 +25,7 @@ export function Header() {
             <Dialog.Content className="menu-sheet">
               <div className="sheet-heading"><div><Dialog.Title>Maré Íntima</Dialog.Title><Dialog.Description>Navegação do conceito</Dialog.Description></div><Dialog.Close asChild><button className="icon-button" aria-label="Fechar menu"><X aria-hidden="true" /></button></Dialog.Close></div>
               <nav aria-label="Navegação no celular">{links.map(link => <Dialog.Close asChild key={link.href}><a href={link.href}>{link.label}</a></Dialog.Close>)}</nav>
-              <Dialog.Close asChild><a className="menu-official" href="#duvidas">Sobre este projeto <span aria-hidden="true">→</span></a></Dialog.Close>
+              <Dialog.Close asChild><a className="menu-official" href="#duvidas">Sobre este projeto <ArrowUpRight size={15} aria-hidden="true" /></a></Dialog.Close>
               <p className="menu-signature">Projeto conceitual independente</p>
             </Dialog.Content>
           </Dialog.Portal>
